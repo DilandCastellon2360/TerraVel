@@ -1,10 +1,14 @@
-var indiceImagenActual = 0;
-var imagenes = document.querySelectorAll('.carrusel-imagen');
+var carruseles = document.querySelectorAll('.carrusel');
 
-function cambiarImagen() {
-    imagenes[indiceImagenActual].style.display = 'none';
-    indiceImagenActual = (indiceImagenActual + 1) % imagenes.length;
-    imagenes[indiceImagenActual].style.display = 'block';
-}
+carruseles.forEach(function(carrusel) {
+    var indiceImagenActual = 0;
+    var imagenes = carrusel.querySelectorAll('.carrusel-imagen');
 
-setInterval(cambiarImagen, 5000); 
+    function cambiarImagen() {
+        imagenes[indiceImagenActual].style.display = 'none';
+        indiceImagenActual = (indiceImagenActual + 1) % imagenes.length;
+        imagenes[indiceImagenActual].style.display = 'block';
+    }
+
+    setInterval(cambiarImagen, 3000); // Cambia la imagen cada 5 segundos
+});

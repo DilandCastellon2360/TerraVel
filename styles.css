@@ -29,17 +29,22 @@ body {
 .contenido {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Cambiado para mejorar el espaciado */
+    justify-content: space-around;
+    margin-bottom: 50px;
 }
 
+
 .producto {
-    width: 100%; /* Cambiado para ocupar todo el ancho en móviles */
+    width: 100%;
     margin: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
+    box-sizing: border-box;
+    margin: 20px auto;
 }
+
 
 .producto img {
     max-width: 100%;
