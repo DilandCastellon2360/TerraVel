@@ -30,21 +30,18 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+    gap: 20px; /* Añade un espacio entre los productos */
 }
 
-
 .producto {
-    width: 100%;
-    margin: 20px;
+    width: 100%; /* Cambiado para ocupar todo el ancho en móviles */
+    margin: 20px auto; /* Añade un margen automático en los lados para centrar el elemento y un margen de 20px en la parte superior e inferior */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
-    box-sizing: border-box;
-    margin: 20px auto;
+    box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en el ancho y alto del elemento */
 }
-
 
 .producto img {
     max-width: 100%;
